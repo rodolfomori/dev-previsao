@@ -1,21 +1,32 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- AVISAR QUE ESTAMOS USANDO A VERSÃO MAIS NOVA DO HTML -->
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>DevClub - Previsão do Tempo</title>
 </head>
+
 <body>
-    <div>
-        <input>
-        <button>Buscar</button>
-        <h2>Tempo em São Paulo</h2>
+    <div class="caixa-maior">
 
-        <p>21 graus</p>
+        <input placeholder="Digite a cidade">
 
-        <p>Névoa</p>
+        <button>
+            <img class="lupa" src="https://www.svgrepo.com/show/390590/find-glass-minus-online-search-seo.svg">
+        </button>
 
-        <p>Umidade: 70%</p>
+        <div class="caixa-media">
+            <h2 class="cidade">Tempo em São Paulo</h2>
+
+            <p class="temp">28°C</p>
+
+            <img class="icone" src="https://openweathermap.org/img/wn/04n.png">
+    
+            <p class="umidade">Umidade: 70%</p>
+        </div>
     </div>
 </body>
+
 </html>
