@@ -6,6 +6,9 @@ function colocarNaTela(dados) {
   document.querySelector('.cidade').innerHTML = 'Tempo em ' + dados.name
   document.querySelector('.temp').innerHTML = Math.floor(dados.main.temp) + '°C'
   document.querySelector('.icone').src = "https://openweathermap.org/img/wn/" + dados.weather[0].icon + ".png"
+  document.querySelector('.umidade').innerHTML = 'Umidade ' + dados.main.humidity + '%'
+
+  /*implementei a linha nove como foi dado para exercicio: para colocar na tela a humidade em tempo real ao pesquisar .../*
 }
 
 async function buscarCidade(cidade) {
